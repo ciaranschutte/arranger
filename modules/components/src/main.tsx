@@ -32,3 +32,6 @@ export {
 export { default as Query, withQuery } from './Query';
 export { default as QuickSearch } from './QuickSearch';
 export * from './utils';
+
+const TestBuild = () => <h1>Test build working</h1>;
+export { TestBuild };
