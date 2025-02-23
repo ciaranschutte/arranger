@@ -2,7 +2,8 @@ import { Component } from 'react';
 import { debounce, sortBy } from 'lodash';
 
 import { withData } from '@/DataContext';
-import { columnStateFields } from '@/DataContext/dataQueries';
+// no exported property
+//import { columnStateFields } from '@/DataContext/dataQueries';
 
 class ColumnsState extends Component {
 	constructor(props) {
@@ -151,13 +152,13 @@ class ColumnsState extends Component {
 										column.fieldName in toggled
 											? toggled[column.fieldName]
 											: column.acessor in toggled
-											? toggled[column.accessor]
-											: column.show,
+												? toggled[column.accessor]
+												: column.show,
 								};
 							}),
 							defaultColumns: tableConfigs?.columns?.filter((column) => column.show),
 						},
-				  },
+					},
 		);
 	}
 }

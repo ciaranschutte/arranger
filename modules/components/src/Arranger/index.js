@@ -1,10 +1,5 @@
 export { default as Arranger } from './Arranger';
-export {
-	default as Aggregations,
-	AggregationsListDisplay,
-	AggregationsList,
-	AggsWrapper,
-} from './Aggregations';
+export { default as Aggregations, AggregationsListDisplay, AggregationsList } from './Aggregations';
 export { default as OldTable } from './Table';
 export { default as AdvancedFacetView } from '../AdvancedFacetView/LiveAdvancedFacetView';
 export { default as MatchBox } from './MatchBox';
